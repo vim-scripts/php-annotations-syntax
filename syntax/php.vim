@@ -2,7 +2,7 @@
 " Language: php
 " Maintainer: Timothy Madden <terminatorul@gmail.com>
 " Last Change: 1 may 2013
-" Version:  0.2
+" Version:  0.3
 
 if !exists('g:php_annotations_syntax') || g:php_annotations_syntax != 0
     syntax match phpDocCommentLineStart #\v^\s*\*\s*# contained
@@ -22,9 +22,9 @@ if !exists('g:php_annotations_syntax') || g:php_annotations_syntax != 0
     highlight link phpAnnotationNumber Number
     highlight link phpAnnotationString String
     highlight link phpAnnotationSimpleString String
-    highlight link phpAnnotationExpressionParenthesis Special
-    highlight link phpAnnotationExpressionBraces Special
-    highlight link phpAnnotationExpressionBrackets Special
-    highlight link phpAnnotation Special
+    highlight link phpAnnotationExpressionParenthesis SpecialComment
+    highlight link phpAnnotationExpressionBraces SpecialComment
+    highlight link phpAnnotationExpressionBrackets SpecialComment
+    highlight link phpAnnotation SpecialComment
     highlight link phpDocComment Comment
 endif
